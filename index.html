@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Elixir Noir, catálogo de perfumería selecta.">
+  <title>Elixir Noir | Luxury Fragance </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+    :root{--black:#010811f8;--surface:#fc0606;--gold:#c9a34a;--gold2:#e7c97a;--ivory:#f5f0e6;--muted:#aaa49a;--line:rgba(201,163,74,.28)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--ivory);font-family:Montserrat,sans-serif;font-weight:300}.grain{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E")}.nav{height:82px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:absolute;z-index:10;width:100%;border-bottom:1px solid rgba(240, 120, 120, 0.989)}.brand{color:var(--ivory);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:1.3rem;letter-spacing:.18em}.brand span{color:var(--gold2)}nav{display:flex;gap:34px}nav a{color:#ddd5c9;text-decoration:none;font-size:.72rem;text-transform:uppercase;letter-spacing:.17em}.menu{display:none;background:none;border:0;color:white;font-size:1.4rem}.hero{min-height:100svh;display:grid;place-items:center;position:relative;background:#070707f4 url('assets/images/backgrounds/hero.jpg') center/cover no-repeat;text-align:center}.hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.013)),linear-gradient(to bottom,rgba(0, 0, 0, 0),#05050501 105%)}.hero-content{position:relative;max-width:920px;padding:120px 24px 70px}.eyebrow{text-transform:uppercase;letter-spacing:.28em;color:var(--gold);font-size:.67rem;font-weight:500}.hero h1{font:500 clamp(4rem,11vw,9.5rem)/.78 'Cormorant Garamond',serif;letter-spacing:.02em;margin:38px 0 20px}.hero h1 em{color:var(--gold2);font-weight:400}.subtitle{text-transform:uppercase;letter-spacing:.55em;font-size:.8rem}.intro{color:var(--muted);max-width:540px;line-height:1.8;margin:28px auto}.button{display:inline-block;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;text-transform:uppercase;letter-spacing:.2em;font-size:.68rem;padding:17px 25px;margin-top:10px;transition:.25s}.button:hover{background:var(--gold);color:#050505}.scroll{position:absolute;bottom:28px;color:var(--gold);text-decoration:none;font-size:1.35rem}.manifesto{padding:120px 8vw;text-align:center;max-width:1000px;margin:auto}.rule{height:55px;width:1px;background:var(--gold);margin:0 auto 35px}.manifesto h2,.section-head h2,.contact h2{font:400 clamp(2.7rem,6vw,5.5rem)/1.03 'Cormorant Garamond',serif;margin:20px 0}.manifesto>p:last-child{max-width:720px;margin:28px auto;color:var(--muted);line-height:1.9}.catalog{padding:105px 6vw;background:linear-gradient(#070707,#0b0b0b)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:20px}.tools{display:flex;gap:12px}.search{border-bottom:1px solid var(--line);padding:10px;display:flex;gap:8px}.search input,select{background:transparent;color:var(--ivory);border:0;outline:0;font:300 .8rem Montserrat;padding:5px}select{border:1px solid var(--line);padding:12px}select option{background:#111}.result-count{color:var(--muted);font-size:.72rem;margin-bottom:28px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:#0b0b0b;border:1px solid rgba(255,255,255,.07);overflow:hidden;transition:.35s}.card:hover{transform:translateY(-5px);border-color:var(--line)}.image-wrap{aspect-ratio:4/4.6;background:linear-gradient(135deg,#10101061,#181818);position:relative;overflow:hidden;display:grid;place-items:center}.image-wrap img{width:100%;height:100%;object-fit:cover;transition:.5s}.card:hover img{transform:scale(1.025)}.placeholder{position:absolute;inset:12%;border:1px dashed rgba(201,163,74,.35);display:grid;place-items:center;text-align:center;color:#756a55;font-size:.68rem;letter-spacing:.13em;line-height:1.8;padding:20px}.number{position:absolute;top:16px;left:16px;color:var(--gold);font:500 .72rem Montserrat;letter-spacing:.15em}.card-body{padding:27px}.family{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:.6rem}.card h3{font:500 1.75rem 'Cormorant Garamond',serif;margin:12px 0 8px}.tagline{color:var(--muted);font:italic 1.08rem 'Cormorant Garamond',serif;min-height:44px}.card-foot{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-top:24px}.price-label{display:block;color:#777;font-size:.55rem;text-transform:uppercase;letter-spacing:.13em}.price{color:var(--gold2);font:500 1.25rem 'Cormorant Garamond',serif}.details{background:none;border:0;border-bottom:1px solid var(--gold);color:var(--gold);cursor:pointer;padding:5px 0;text-transform:uppercase;letter-spacing:.13em;font-size:.6rem}.add-note{margin-top:35px;border:1px dashed var(--line);padding:32px;display:flex;gap:20px;align-items:center;color:var(--muted)}.add-note>span{font-size:2rem;color:var(--gold)}.add-note strong{color:var(--ivory);font-family:'Cormorant Garamond';font-size:1.4rem}.add-note p{margin:5px 0;font-size:.75rem}.contact{text-align:center;padding:150px 20px;background:radial-gradient(circle at 50% 60%,#1b160c,#050505 55%)}.contact h2 em{color:var(--gold2)}.contact>p{color:var(--muted)}footer{padding:40px 6vw;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:#777;font-size:.65rem}dialog{width:min(920px,92vw);max-height:90vh;background:#0b0b0b;color:var(--ivory);border:1px solid var(--line);padding:0}dialog::backdrop{background:rgba(0,0,0,.88);backdrop-filter:blur(7px)}.close{position:absolute;right:16px;top:12px;z-index:2;background:none;border:0;color:var(--gold);font-size:2rem;cursor:pointer}.modal-grid{display:grid;grid-template-columns:1fr 1.15fr}.modal-image{min-height:520px;background:#111;position:relative;display:grid;place-items:center}.modal-image img{width:100%;height:100%;object-fit:cover}.modal-copy{padding:60px 45px}.modal-copy h2{font:500 2.6rem 'Cormorant Garamond';margin:12px 0}.notes{display:grid;gap:14px;margin:30px 0}.notes div{border-top:1px solid rgba(255,255,255,.09);padding-top:12px}.notes b{color:var(--gold);text-transform:uppercase;letter-spacing:.15em;font-size:.58rem;display:block;margin-bottom:6px}.notes span{color:#c5bfb5;font-size:.82rem;line-height:1.6}.reveal{animation:rise 1.2s both}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.modal-grid{grid-template-columns:1fr}.modal-image{min-height:330px}.modal-copy{padding:40px 25px}}@media(max-width:620px){.nav nav{display:none;position:absolute;top:82px;left:0;right:0;background:#080808;padding:25px;flex-direction:column}.nav nav.open{display:flex}.menu{display:block}.hero h1{font-size:4.1rem}.subtitle{letter-spacing:.25em}.product-grid{grid-template-columns:1fr}.tools{width:100%;flex-direction:column}.search input{width:100%}footer{flex-direction:column;gap:15px;text-align:center}.catalog{padding-inline:4vw}}
+ body::before {
+    content: "";
+      position:fixed ;
+        inset: 0;
+          background-image: url('assets/images/products/en.png');
+            background-repeat:no-repeat;
+              background-position:center 51.4%;
+                background-size: 450px;
+                  opacity: 0.999;
+                  z-index: -1;
+                    pointer-events: none;
+                      }
+
+
+
+                      <html la
+                      ng="es">
+
+
+                      <head>
+
+
+                        <meta charset="utf-8">
+
+
+                          <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+                            <meta name="description" content="Elixir Noir, catálogo de perfumería selecta.">
+
+
+                              <title>Elixir Noir | Luxury Fragance Edition</title>
+
+
+                                <style>
+
+
+                                    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+                                        :root{--black:#050505;--surface:#0b0b0b;--gold:#c9a34a;--gold2:#e7c97a;--ivory:#f5f0e6;--muted:#aaa49a;--line:rgba(201,163,74,.28)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--ivory);font-family:Montserrat,sans-serif;font-weight:300}.grain{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E")}.nav{height:82px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:absolute;z-index:10;width:100%;border-bottom:1px solid rgba(255,255,255,.11)}.brand{color:var(--ivory);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:1.3rem;letter-spacing:.18em}.brand span{color:var(--gold2)}nav{display:flex;gap:34px}nav a{color:#ddd5c9;text-decoration:none;font-size:.72rem;text-transform:uppercase;letter-spacing:.17em}.menu{display:none;background:none;border:0;color:white;font-size:1.4rem}.hero{min-height:100svh;display:grid;place-items:center;position:relative;background:#070707 url('assets/images/backgrounds/hero.jpg') center/cover no-repeat;text-align:center}.hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,0,0,.32),rgba(0,0,0,.92)),linear-gradient(to bottom,rgba(0,0,0,.25),#050505 105%)}.hero-content{position:relative;max-width:920px;padding:120px 24px 70px}.eyebrow{text-transform:uppercase;letter-spacing:.28em;color:var(--gold);font-size:.67rem;font-weight:500}.hero h1{font:500 clamp(4rem,11vw,9.5rem)/.78 'Cormorant Garamond',serif;letter-spacing:.02em;margin:38px 0 20px}.hero h1 em{color:var(--gold2);font-weight:400}.subtitle{text-transform:uppercase;letter-spacing:.55em;font-size:.8rem}.intro{color:var(--muted);max-width:540px;line-height:1.8;margin:28px auto}.button{display:inline-block;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;text-transform:uppercase;letter-spacing:.2em;font-size:.68rem;padding:17px 25px;margin-top:10px;transition:.25s}.button:hover{background:var(--gold);color:#050505}.scroll{position:absolute;bottom:28px;color:var(--gold);text-decoration:none;font-size:1.35rem}.manifesto{padding:120px 8vw;text-align:center;max-width:1000px;margin:auto}.rule{height:55px;width:1px;background:var(--gold);margin:0 auto 35px}.manifesto h2,.section-head h2,.contact h2{font:400 clamp(2.7rem,6vw,5.5rem)/1.03 'Cormorant Garamond',serif;margin:20px 0}.manifesto>p:last-child{max-width:720px;margin:28px auto;color:var(--muted);line-height:1.9}.catalog{padding:105px 6vw;background:linear-gradient(#070707,#0b0b0b)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:20px}.tools{display:flex;gap:12px}.search{border-bottom:1px solid var(--line);padding:10px;display:flex;gap:8px}.search input,select{background:transparent;color:var(--ivory);border:0;outline:0;font:300 .8rem Montserrat;padding:5px}select{border:1px solid var(--line);padding:12px}select option{background:#111}.result-count{color:var(--muted);font-size:.72rem;margin-bottom:28px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:#0b0b0b;border:1px solid rgba(255,255,255,.07);overflow:hidden;transition:.35s}.card:hover{transform:translateY(-5px);border-color:var(--line)}.image-wrap{aspect-ratio:4/4.6;background:linear-gradient(135deg,#101010,#181818);position:relative;overflow:hidden;display:grid;place-items:center}.image-wrap img{width:100%;height:100%;object-fit:cover;transition:.5s}.card:hover img{transform:scale(1.025)}.placeholder{position:absolute;inset:12%;border:1px d
+ }
+ </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="nav" id="top">
+    <a class="brand" href="#top"><span>ELIXIR</span> NOIR</a>
+    <button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav><a href="#coleccion">Colección</a><a href="#firma">La firma</a><a href="#contacto">Contacto</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Perfumería selecta · Edición 2026</p>
+        <h1>ELIXIR <em>NOIR</em></h1>
+        <p class="subtitle">Luxury Fragance Edition</p>
+        <p class="intro">Una colección creada para expresar presencia, estilo y personalidad.</p>
+        <a class="button" href="#coleccion">Descubrir la colección</a>
+      </div>
+      <a class="scroll" href="#coleccion" aria-label="Bajar al catálogo">↓</a>
+    </section>
+
+    <section class="manifesto" id="firma">
+      <div class="rule"></div>
+      <p class="eyebrow"> FRAGANCIA.</p>
+      <h2>La esencia invisible<br>de una presencia inolvidable.</h2>
+      <p>De perfiles cítricos y cristalinos a composiciones florales, ambaradas y gourmand. Cada fragancia cuenta una historia propia.</p>
+    </section>
+
+    <section class="catalog" id="coleccion">
+      <div class="section-head">
+        <div><p class="eyebrow">Catálogo privado</p><h2>La colección</h2></div>
+        <div class="tools">
+          <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar perfume o familia"></label>
+          <select id="family" aria-label="Filtrar por familia"><option value="">Todas las familias</option></select>
+        </div>
+      </div>
+      <p id="resultCount" class="result-count"></p>
+      <div id="products" class="product-grid"></div>
+      <div class="add-note"><span>＋</span><div><strong>Espacio preparado para nuevas fragancias</strong><p>Añade nuevos objetos al código. La cuadrícula y los filtros se actualizan automáticamente.</p></div></div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <p class="eyebrow">Asesoría personalizada</p>
+      <h2>Tu esencia.<br><em>Tu firma.</em></h2>
+      <p>Solicita disponibilidad, precios y recomendaciones personalizadas.</p>
+      <a class="button whatsapp" id="whatsappMain" href="#">Hablar por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span>ELIXIR</span> NOIR</a><p>Perfumería selecta · Luxury Fragance Edition</p><p>© <span id="year"></span> Elixir Noir</p></footer>
+
+  <dialog id="productDialog">
+    <button class="close" aria-label="Cerrar">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script>
+    // 1. CONFIGURACIÓN PRINCIPAL
+      const CONFIG = {
+          whatsapp: "524443730336",
+              currency: "MXN",
+                  sheetUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxnS-SYMJaXg3xppjJUFH1M07tr33bufpm5nbv5EJh04Ke5jEyJQKUjuHx__VXvSPg8oGMmsQV-A1g/pub?output=csv"
+                    };
+
+                      // 2. VARIABLES DE LA INTERFAZ
+                        const grid = document.querySelector('#products');
+                          const search = document.querySelector('#search');
+                            const family = document.querySelector('#family');
+                              const count = document.querySelector('#resultCount');
+                                const dialog = document.querySelector('#productDialog');
+                                  const dContent = document.querySelector('#dialogContent');
+
+                                    const money = n => n ? new Intl.NumberFormat('es-MX',{style:'currency',currency:CONFIG.currency}).format(Number(n)) : 'Precio por añadir';
+                                      const norm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+                                        function imageMarkup(p, modal=false){
+                                            return `<img src="${p.image}" alt="${p.name}" onerror="this.style.display='none'">`;
+                                              }
+
+                                                // 3. MOTOR DE RENDERIZADO (Dibuja los perfumes de Google Sheets)
+                                                  function render(){
+                                                      const q = norm(search.value), f = family.value;
+                                                          const items = window.PRODUCTS.filter(p => p.name && p.name.trim() !== "" && (!q || norm(`${p.name} ${p.family} ${p.tagline}`).includes(q)) && (!f || p.family === f));
+
+                                                              count.textContent = `${items.length} fragancia${items.length === 1 ? '' : 's'}`;
+
+                                                                  grid.innerHTML = items.map(p => `<article class="card">
+                                                                        <div class="image-wrap">${imageMarkup(p)}<span class="number">${String(p.id).padStart(2,'0')}</span></div>
+                                                                              <div class="card-body"><span class="family">,
+</script>
+
+</body>
+</html>
